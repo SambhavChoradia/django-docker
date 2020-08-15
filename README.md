@@ -13,13 +13,13 @@ First, clone the repo:
 git clone https://github.com/SambhavChoradia/django-docker.git
 ```
 
-### Usage
+## Usage
 
 ```bash
 cd app
 ```
 
-Build and run :
+## Build and run :
 
 ```
 sudo docker-compose build
@@ -29,7 +29,7 @@ sudo docker-compose build
 sudo docker-compose up db
 ```
 
-Start mysql and create new user
+## Start mysql and create new user
 
 ```
 sudo docker-compose exec db mysql -u root -p
@@ -43,13 +43,13 @@ create user 'docker'@'localhost' identified by 'password';
 grant all privileges on docker.* to 'docker'@'localhost';
 ```
 
-Start django app :
+## Start django app :
 
 ```
 sudo docker-compose up api
 ```
 
-Run migrations
+## Run migrations
 
 ```
 sudo docker-compose exec api python manage.py migrate
